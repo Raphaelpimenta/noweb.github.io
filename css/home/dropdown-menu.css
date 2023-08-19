@@ -1,0 +1,102 @@
+[data-dropdown],
+.dropdown {
+    position: relative;
+}
+
+.dropdown::before {
+    content: '';
+    display: inline-block;
+    background: url('../../img/icones/seta-para-baixo.png') no-repeat right;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 4px;
+    right: -20px;
+}
+
+[data-dropdown] .dropdown-menu {
+    display: none;
+}
+
+[data-dropdown]:hover .dropdown-menu,
+[data-dropdown].ativaDropdown .dropdown-menu {
+    display: block;
+    animation: show-down .3s forwards;
+}
+
+@keyframes show-down {
+    from {
+        opacity: 0;
+        transform:  translate3d(0, -10px, 0);
+    }
+    to {
+        opacity: 1;
+        transform:  translate3d(0, 0, 0);
+    }
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 35px;
+    left: -70px;
+    background-color: #fff;
+    box-shadow: 0px 15px 15px #000;
+    border-radius: 6px;
+    padding: 20px;
+    width: max-content;
+    z-index: 200;
+}
+
+.dropdown-menu::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 120px;
+    width: 0px;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+}
+
+.dropdown-menu li {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0px;
+}
+
+.dropdown-menu li img {
+    margin: 0 auto;
+    padding: 10px;
+    background: linear-gradient(180deg, #FBAF17 0%, #FBA017 100%);
+    border-radius: 10px;
+
+}
+
+@media (max-width: 960px) {
+    .dropdown::before {
+        display: none;
+    }
+
+    .dropdown-menu  {
+        position: static;
+        margin: 0 auto;
+    }
+
+    .dropdown-menu::before{
+        top: -10px;
+        left: 180px;
+    }
+
+    .dropdown-menu li {
+        grid-template-columns: 40px 1fr;
+        gap: 0px;
+    }
+
+    .dropdown-menu li a {
+        color: #000;
+    }
+}

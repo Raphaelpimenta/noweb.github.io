@@ -1,0 +1,205 @@
+.header-bg {
+    background: linear-gradient(to right, #fff 45%,  #FBAF17 45%) ;
+    padding: 10px;
+    position: relative;
+}
+
+.header-bg::before {
+    content: '';
+    width: 138px;
+    height: 80px;
+    background: url("../../img/icones/bolinhas-header.png") no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    position: relative;
+}
+
+.js-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.header::after {
+    content: '';
+    width: 5%;
+    height: 71px;
+    display: block;
+    background-color: #FBAF17;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    position: absolute;
+    top: -20%;
+    right: 55%;
+
+}
+
+#btn-mobile {
+    display: none;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.header-menu li a {
+    font-weight: 500;
+    position: relative;
+}
+
+.header-menu li a.ativado {
+    font-weight: 600;
+}
+
+.header-menu li a:first-child::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    border-radius: 6px;
+    background-color: #fff;
+    margin-top: 4px;
+    transition: 0.3s;
+    position: absolute;
+    right: 0;
+}
+
+.header-menu li a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.header-menu li a.ativado::after {
+    width: 100%;
+}
+
+.btn-contato{
+    background-color: #202332;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    .header::after {
+        height: 70px;
+    }
+        
+    .js-menu {
+        display: flex;
+        gap: 0rem;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        right: 0px;
+        text-align: center;
+        transition: .4s;
+        z-index: 1000;
+        height: 0px;
+        background-color: #202332;
+        visibility: hidden;
+        overflow-y: hidden;
+        border-radius: 6px;
+    }
+
+    .header-menu a {
+        display: block;
+        padding: 10px 0px;
+        margin: 0px 50px;
+        color: #fff;
+    }
+
+    .ativaMenu .header-menu{
+        height: auto;
+        visibility: visible;
+        overflow-y: auto;
+        animation: show-down .3s forwards;
+    }
+
+    @keyframes show-down {
+        from {
+            opacity: 0;
+            transform:  translate3d(0, -10px, 0);
+        }
+        to {
+            opacity: 1;
+            transform:  translate3d(0, 0, 0);
+        }
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        gap: .5rem;
+    }
+
+    #hamburguer {
+        display: block;
+        color: #202332;
+        border-top: 2px solid;
+        width: 20px;
+    }
+
+    #hamburguer::after, 
+    #hamburguer::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+
+    nav.ativaMenu #hamburguer {
+        border-top-color: transparent;
+    }
+
+    nav.ativaMenu #hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    nav.ativaMenu #hamburguer::after {
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-bg{
+        background: #FBAF17; 
+    }
+
+    .header-bg::before,
+    .header::after {
+        display: none;
+    }
+}

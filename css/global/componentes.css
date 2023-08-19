@@ -1,0 +1,18 @@
+.container {
+    max-width: 1000px;
+    padding: 0px 20px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+/*Animação Scroll*/
+.js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: .3s;
+}
+
+.js-scroll.ativo{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}

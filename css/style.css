@@ -1,0 +1,7 @@
+@import './global/reset.css';
+@import './global/componentes.css';
+
+@import './home/header.css';
+@import './home/dropdown-menu.css';
+@import './home/introducao.css';
+@import './home/produtos.css';
