@@ -1,0 +1,81 @@
+.categorias-bg {
+    background-color: #202332;
+    box-shadow: inset 0 -400px #fff;
+}
+
+.categorias {
+    position: relative;
+}
+
+.categorias::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    background: url('../../img/icones/bolinhas-cinza.png') no-repeat center;
+    position: absolute;
+    top: 0px;
+    left: 37%;
+}
+
+.titulo-categorias {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 4.5rem;
+}
+
+.categoria-itens {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 50px 30px;
+}
+
+.categoria-itens li h4 {
+    text-transform: uppercase;
+    color: #FBAF17;
+    text-align: center;
+    margin-bottom: 30px;
+    z-index: 20;
+}
+
+.categoria-itens li:nth-child(7) h4{
+    margin-bottom: 10px;
+}
+
+.categoria-itens li div {
+    padding: 10px;
+    background-color: #FBAF17;
+    border-radius: 45px;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px){
+    .categoria-itens {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    .categoria-itens li:nth-child(7) h4{
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .categoria-itens {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .categorias-bg {
+        box-shadow: none;
+        padding-bottom: 50px;
+    }
+}

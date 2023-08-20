@@ -1,5 +1,6 @@
 .produtos-geral {
     position: relative;
+    z-index: 1;
 }
 
 .produtos-bg {
@@ -134,7 +135,6 @@
     }
 
     .produtos {
-        /* position: relative; */
         bottom: 345px;
     }
 
