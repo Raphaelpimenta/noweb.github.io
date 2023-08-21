@@ -17,47 +17,63 @@
             <nav class="js-menu">
                 <div>
                     <button id="btn-mobile"><span id="hamburguer"></span></button>
-                    <ul class="header-menu">
+                    <ul class="header-menu ativaLink">
                         <li><a href="#" class="ativado">Home</a></li>
                         <li data-dropdown>
                             <a href="#" class="dropdown">Categorias</a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <img src="./img/fotos/Lampadas.png" alt="Lâmpadas">
+                                    <div>
+                                        <img src="./img/fotos/Lampadas.png" alt="Lâmpadas">
+                                    </div>
                                     <a href="#">Lâmpadas</a>
                                 </li>
                                 <li>
-                                    <img src="./img/fotos/Lustres.png" alt="Lustres">
+                                    <div>
+                                        <img src="./img/fotos/Lustres.png" alt="Lustres">
+                                    </div>
                                     <a href="#">Lustres</a>
                                 </li>
                                 <li>
-                                    <img src="./img/fotos/Luminarias.png" alt="Luminárias">
+                                    <div>
+                                        <img src="./img/fotos/Luminarias.png" alt="Luminárias">
+                                    </div>
                                     <a href="#">Luminárias</a>
                                 </li>
                                 <li>
-                                    <img src="./img/fotos/Decoracoes.png" alt="Decorações">
+                                    <div>
+                                        <img src="./img/fotos/Decoracoes.png" alt="Decorações">
+                                    </div>
                                     <a href="#">Decorações</a>
                                 </li>
                                 <li>
-                                    <img src="./img/fotos/Acessorios.png" alt="Acessórios">
+                                    <div>
+                                        <img src="./img/fotos/Acessorios.png" alt="Acessórios">
+                                    </div>
                                     <a href="#">Acessórios</a>
                                 </li>
                                 <li>
-                                    <img src="./img/fotos/Ferramentas.png" alt="Ferramentas">
+                                    <div>
+                                        <img src="./img/fotos/Ferramentas.png" alt="Ferramentas">
+                                    </div>
                                     <a href="#">Ferramentas</a>
                                 </li>
                                 <li>
-                                    <img src="./img/fotos/Utensilios-domesticos.png" alt="Utensílios Domésticos">
+                                    <div>
+                                        <img src="./img/fotos/Utensilios-domesticos.png" alt="Utensílios Domésticos">
+                                    </div>
                                     <a href="#">Utensílios Domésticos</a>
                                 </li>
                                 <li>
-                                    <img src="./img/fotos/Cabos.png" alt="Cabos">
+                                    <div>
+                                        <img src="./img/fotos/Cabos.png" alt="Cabos">
+                                    </div>
                                     <a href="#">Cabos</a>
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Localização</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#localizacao">Localização</a></li>
                     </ul>
                 </div>
                 <button data-modal="abrir" class="btn-contato">
@@ -81,9 +97,9 @@
                     <button class="btn-2">
                         <a href="#">Nos conheça melhor</a>
                     </button>
-                    <div class="btn-3">
+                    <div class="btn-3 js-menu">
                         <img src="./img/icones/arrow-down.png" alt="Seta para baixo">
-                        <a href="#">Role para ver mais</a>
+                        <a href="#produtos">Role para ver mais</a>
                     </div>
                 </div>
 
@@ -110,7 +126,7 @@
             </div> 
         </article>
     
-        <section class="container produtos">
+        <section class="container produtos" id="produtos">
             <h3 class="titulo-produtos">Produtos em Destaque</h3>
             <ul class="produto-itens">
                 <li class="item">
@@ -280,7 +296,7 @@
         </div>
     </section>
 
-    <article class="sobre-bg">
+    <article class="sobre-bg" id="sobre">
         <div class="bg-azul-amarelo">
             <div class="container sobre">
                 <h3 class="titulo-sobre">Sua Melhor Opção</h3>
@@ -313,7 +329,7 @@
 
     <footer class="footer-bg">
         <div class="container footer">
-            <div class="footer-conteudo">
+            <div class="footer-conteudo" id="localizacao">
                 <img src="./img/icones/logo.png" alt="Logo">
                 <p>Venha na Elétrica J. Santos e garanta a melhor opção para sua casa!</p>
             </div>

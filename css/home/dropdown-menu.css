@@ -68,11 +68,15 @@
     margin: 20px 0px;
 }
 
-.dropdown-menu li img {
-    margin: 0 auto;
+.dropdown-menu li div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     background: linear-gradient(180deg, #FBAF17 0%, #FBA017 100%);
     border-radius: 10px;
+    width: 50px;
+    height: 50px;
 
 }
 
