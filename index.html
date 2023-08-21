@@ -17,7 +17,7 @@
             <nav class="js-menu">
                 <div>
                     <button id="btn-mobile"><span id="hamburguer"></span></button>
-                    <ul class="header-menu ativaLink">
+                    <ul class="header-menu">
                         <li><a href="#" class="ativado">Home</a></li>
                         <li data-dropdown>
                             <a href="#" class="dropdown">Categorias</a>
@@ -342,6 +342,21 @@
             </div>
         </div>
     </footer>
+
+    <section class="modal-container" data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <form action="">
+                <label for="name">Nome Completo</label>
+                <input type="text" for="name" id="nomeModal">
+                <label for="email">Email</label>
+                <input type="text" for="email" id="emailModal">
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" cols="40" rows="5" placeholder="O que você precisa?"></textarea>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+    </section>
 
 
     <script type="module" src="./js/script.js"></script>
