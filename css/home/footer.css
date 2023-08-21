@@ -1,0 +1,115 @@
+.fundo-bg {
+    object-fit: cover;
+    background: url('../../img/fotos/footer-bg.png') no-repeat center;
+    position: relative;
+    margin-bottom: -36px;
+}
+
+.fundo-bg::before {
+    content: '';
+    display: block;
+    width: 235px;
+    height: 237px;
+    background: url('../../img/icones/bolinhas.png') no-repeat center;
+    position: absolute;
+    top: 27%;
+    left: 23%;
+}
+
+.conteudo-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    position: relative;
+    top: -36px
+}
+
+.img-mulher {
+    z-index: 30;
+}
+
+.btn-vendas {
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-radius: 15px;
+    color: #202332;
+    font-weight: 700;
+    border: none;
+    background-color: #FBAF17;
+    position: relative;
+    bottom: -130px;
+}
+
+@media (max-width: 600px){
+    .fundo-bg::before {
+        display: none;
+    }
+
+    .conteudo-footer {
+        gap: 0;
+    }
+
+    .btn-vendas {
+        bottom: 45px;
+        z-index: 40;
+    }
+}
+
+.footer-bg {
+    background-color: #202332;
+    margin-top: -60px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 100px 20px;
+}
+
+.footer-conteudo img {
+    margin-bottom: 20px;
+}
+
+.footer-conteudo p {
+    color: #c8c9cd;
+    line-height: 35px;
+    margin-bottom: 30px;
+}
+
+.redes p {
+    text-transform: uppercase;
+    color: #c8c9cd;
+    margin-bottom: 20px;
+}
+
+.redes-icones {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-rodape {
+    padding: 30px;
+    border-top: 1px solid #FBAF17;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape p {
+    color: #c8c9cd;
+}
+
+.desenvolvimento {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 20px;
+}
