@@ -1,5 +1,6 @@
 .header-bg {
-    background: linear-gradient(to right, #fff 45%,  #FBAF17 45%) ;
+    /* background: linear-gradient(to right, #fff 45%,  #FBAF17 45%); */
+    background: linear-gradient(to right, #fff 43%,  #FBAF17 43%);
     padding: 10px;
     position: relative;
 }
@@ -17,8 +18,6 @@
 .header {
     display: flex;
     justify-content: space-between;
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
     position: relative;
 }
 
@@ -38,7 +37,7 @@
     border-bottom-left-radius: 30px;
     position: absolute;
     top: -20%;
-    right: 55%;
+    right: 57%;
 
 }
 
@@ -94,9 +93,9 @@
     cursor: pointer;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1000px) {
     .header::after {
-        height: 70px;
+        height: 71px;
     }
         
     .js-menu {
