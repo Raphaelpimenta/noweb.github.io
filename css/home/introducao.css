@@ -169,3 +169,17 @@
         font-size: 2rem;
     }
 }
+
+@media(min-width: 1400px) {
+    .introducao-bg {
+        object-fit: cover;
+        background: url('../../img/fotos/introducao-bg2.jpg') no-repeat top center;
+    }
+}
+
+@media(min-width: 1532px) {
+    .introducao-bg {
+        object-fit: cover;
+        background: url('../../img/fotos/introducao-bg3.jpg') no-repeat top center;
+    }
+}
