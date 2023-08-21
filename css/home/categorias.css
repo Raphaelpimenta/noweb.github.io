@@ -69,7 +69,11 @@
 }
 
 @media (max-width: 600px) {
-    .slide-wrapper {
+    .categoria-itens {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    /* .slide-wrapper {
         overflow: hidden;
       }
       
@@ -86,7 +90,7 @@
 
       .slide li div {
         margin: 0 auto;
-      }
+      } */
 
     .categorias-bg {
         box-shadow: none;
