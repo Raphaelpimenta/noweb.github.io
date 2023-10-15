@@ -1,6 +1,7 @@
 export default function initscrollSuave(){
 
     const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]')
+    const fechaMenu = new Event("scrollDone")
 
     function scrollSuave(event){
         event.preventDefault()
@@ -11,6 +12,8 @@ export default function initscrollSuave(){
             behavior: 'smooth',
             block: 'center',
         });
+
+        document.dispatchEvent(fechaMenu)
     }
 
     linksInternos.forEach((link) => {
